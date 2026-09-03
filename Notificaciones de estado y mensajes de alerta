@@ -1,0 +1,11 @@
+<?php if (isset($_GET['status'])): ?>
+    <?php if ($_GET['status'] == 'success'): ?>
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <strong>¡Éxito!</strong> El ensayo fue registrado correctamente en la base de datos.
+        </div>
+    <?php elseif ($_GET['status'] == 'error'): ?>
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <strong>Error:</strong> No se pudo procesar el registro. Verifique los datos.
+        </div>
+    <?php endif; ?>
+<?php endif; ?>
